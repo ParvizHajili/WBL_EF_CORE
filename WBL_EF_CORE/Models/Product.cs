@@ -1,6 +1,8 @@
-﻿namespace WBL_EF_CORE.Models
+﻿using WBL_EF_CORE.Models.Abstract;
+
+namespace WBL_EF_CORE.Models
 {
-    public class Product : BaseEntity
+    public class Product : BaseEntity, IEntity
     {
         public string Name { get; set; }
         public int Quantity { get; set; }

@@ -1,6 +1,8 @@
-﻿namespace WBL_EF_CORE.Models
+﻿using WBL_EF_CORE.Models.Abstract;
+
+namespace WBL_EF_CORE.Models
 {
-    public class Category : BaseEntity
+    public class Category : BaseEntity, IEntity
     {
         public Category()
         {
